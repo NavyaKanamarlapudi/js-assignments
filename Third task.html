@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Assignment 1 question 1  </title>
+        <p id='sample1'></p>
+        
+
+    </head>
+    <body>
+        <Script>
+            var today = new Date();
+            var date1 = (today.getMonth()+1)+'-'+today.getDate()+'-'+ today.getFullYear();
+
+            var date2 = (today.getMonth()+1)+'/'+today.getDate()+'/'+ today.getFullYear();
+
+            var date3 =today.getDate() +'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            var date4 = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+            var date= date1 + ' , ' +date2 + ' or ' +date3 + ' , ' + date4
+            
+            document.getElementById('sample1').innerHTML=date; 
+
+ 
+        </Script>
+        
+
+    </body>
+</html>
