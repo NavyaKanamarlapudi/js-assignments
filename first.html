@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Assignment 1 question 1  </title>
+        <p id='sample1'></p>
+        <p id='sample2'></p>
+
+    </head>
+    <body>
+        <Script>
+            var today = new Date();
+            var day= today.getDay();
+            var totaldays=['Sunday', 'Monday', 'Tuesday', 
+                    'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+            var output1= 'Today is : ' + totaldays[day];
+
+            document.getElementById('sample1').innerHTML=output1;  
+
+            //document.write("<br/>");
+
+            var hours= today.getHours();
+            var ampm = hours >= 12 ? 'PM' : 'AM'; 
+            hours = hours % 12; 
+            hours = hours ? hours : 12;  
+            var minutes = today.getMinutes(); 
+            minutes = minutes < 10 ? '0' + minutes : minutes;    
+            var myTime = 'Current time is : '+  hours + " " + ampm + " : " + minutes + " : " + today.getMilliseconds(); 
+
+            document.getElementById('sample2').innerHTML=myTime; 
+
+ 
+        </Script>
+
+    </body>
+</html>
